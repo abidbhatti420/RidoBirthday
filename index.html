@@ -2,56 +2,54 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Special Day</title>
+
+<title>Happy Birthday Rida Noor</title>
 
 <style>
 
 body{
 margin:0;
-font-family:'Segoe UI',sans-serif;
-background:linear-gradient(270deg,#ff758c,#ff7eb3,#ffb199);
-background-size:600% 600%;
-animation:bg 12s ease infinite;
+font-family:Segoe UI;
+background:linear-gradient(135deg,#ff758c,#ff7eb3);
 color:white;
 text-align:center;
-overflow:hidden;
+overflow-x:hidden;
 }
 
-@keyframes bg{
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
-}
+/* pages */
 
 .page{
 display:none;
-height:100vh;
-padding:30px;
-overflow-y:auto;
-animation:fade 1s ease;
+padding:30px 20px;
+min-height:100vh;
 }
 
 .active{
 display:block;
 }
 
-@keyframes fade{
-from{opacity:0;}
-to{opacity:1;}
+/* text */
+
+h1{
+margin-top:20px;
+font-size:32px;
 }
 
 p{
-max-width:800px;
-margin:15px auto;
+max-width:700px;
+margin:auto;
 line-height:1.7;
 font-size:18px;
 }
 
+/* button */
+
 .button{
 margin-top:30px;
-padding:14px 30px;
+padding:14px 28px;
 border:none;
 border-radius:40px;
 font-size:18px;
@@ -60,17 +58,14 @@ color:#ff4f81;
 cursor:pointer;
 }
 
-.button:hover{
-background:#ff4f81;
-color:white;
-}
+/* profile photo */
 
 .photo{
-width:230px;
-height:230px;
+width:220px;
+height:220px;
 border-radius:50%;
 overflow:hidden;
-margin:20px auto;
+margin:30px auto;
 border:5px solid white;
 box-shadow:0 0 25px white;
 }
@@ -81,46 +76,35 @@ height:100%;
 object-fit:cover;
 }
 
-/* slideshow */
+/* gallery */
 
 .gallery{
-position:relative;
-width:260px;
-margin:20px auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+margin-top:20px;
 }
 
 .gallery img{
-width:100%;
-border-radius:20px;
-position:absolute;
-opacity:0;
-transition:1s;
-}
-
-.gallery img.active{
-opacity:1;
+width:150px;
+border-radius:15px;
 }
 
 /* video */
 
 video{
-width:300px;
-border-radius:15px;
+width:90%;
+max-width:350px;
 margin-top:20px;
+border-radius:15px;
 }
 
 /* cake */
 
 .cake{
-font-size:90px;
-margin-top:100px;
-animation:bounce 1s infinite;
-}
-
-@keyframes bounce{
-0%{transform:translateY(0);}
-50%{transform:translateY(-15px);}
-100%{transform:translateY(0);}
+font-size:80px;
+margin-top:60px;
 }
 
 /* hearts */
@@ -137,38 +121,8 @@ animation:float 6s linear infinite;
 100%{transform:translateY(-100vh);}
 }
 
-/* typing */
-
-.typing{
-border-right:3px solid white;
-display:inline-block;
-white-space:nowrap;
-overflow:hidden;
-animation:typing 6s steps(60,end),blink .8s infinite;
-}
-
-@keyframes typing{
-from{width:0}
-to{width:100%}
-}
-
-@keyframes blink{
-50%{border-color:transparent}
-}
-
-/* explosion */
-
-.explode{
-font-size:60px;
-animation:boom 1s ease forwards;
-}
-
-@keyframes boom{
-0%{transform:scale(.2)}
-100%{transform:scale(1.2)}
-}
-
 </style>
+
 </head>
 
 <body>
@@ -181,7 +135,7 @@ animation:boom 1s ease forwards;
 
 <p>Someone prepared something only for you...</p>
 
-<button class="button" onclick="nextPage(2)">Yes, Show Me 💖</button>
+<button class="button" onclick="nextPage(2)">Show Me 💖</button>
 
 </div>
 
@@ -192,9 +146,9 @@ animation:boom 1s ease forwards;
 
 <div class="cake">🎂</div>
 
-<h1>Make A Wish...</h1>
+<h1>Make A Wish</h1>
 
-<button class="button" onclick="cutCake()">Cut The Cake ✨</button>
+<button class="button" onclick="nextPage(3)">Cut The Cake ✨</button>
 
 </div>
 
@@ -211,7 +165,7 @@ animation:boom 1s ease forwards;
 
 <div class="gallery">
 
-<img src="lifeline1.jpeg" class="active">
+<img src="lifeline1.jpeg">
 
 <img src="lifeline2.jpeg">
 
@@ -219,7 +173,7 @@ animation:boom 1s ease forwards;
 
 </div>
 
-<button class="button" onclick="nextPage(4)">Read My Heart 🤍</button>
+<button class="button" onclick="nextPage(4)">Read My Heart ❤️</button>
 
 </div>
 
@@ -228,24 +182,31 @@ animation:boom 1s ease forwards;
 
 <div class="page" id="page4">
 
-<h1 class="typing">
-Happy Birthday to the Queen of my heart ❤️
-</h1>
+<h1>My Heart For You ❤️</h1>
 
 <p>
 
-The Lady of my dreams and The Love of my Life ❤️  
+Happy Birthday to the Queen of my heart ❤️  
+
+The Lady of my dreams  
+And The Love of my Life ❤️  
+
 I love you so much Janam 💋💋💋  
+
 You mean the world 🌍 to me Janam...  
+
 I can't imagine my life without you..  
 
-I feel I'm the luckiest boy to have you in my life 😍  
+I feel I'm the luckiest Boy to have you in my life 😍  
 
 Thankyou for always being there..  
 
+This birthday I'm not wid you.. but  
 InshaAllah we will celebrate all of our coming birthdays together..  
 
-InshaAllah you will be my wife soon ❤️  
+InshaAllah you will be my Wife soon ❤️  
+
+I love you meri Janam 😘  
 
 </p>
 
@@ -254,6 +215,7 @@ InshaAllah you will be my wife soon ❤️
 Happy birthday to my favorite person 😍🎉🎈  
 
 You’re the most beautiful soul 🎂🌺  
+
 the strongest girl 💪👑 I’ve ever known  
 
 You have no idea how much I like you ❤️  
@@ -262,6 +224,8 @@ Janam you’re my everything 💎💗
 
 From the deepest part of my heart  
 I LOVE YOU ❤️  
+
+I hope we spend the rest of our lives together 👫  
 
 </p>
 
@@ -274,7 +238,7 @@ I LOVE YOU ❤️
 
 <div class="page" id="page5">
 
-<h1 class="explode">I LOVE YOU JANAM ❤️</h1>
+<h1>I Love You Janam ❤️</h1>
 
 <video controls>
 
@@ -282,30 +246,16 @@ I LOVE YOU ❤️
 
 </video>
 
-<p>I hope we spend the rest of our lives together 👫</p>
-
 </div>
 
 
 <script>
-
-/* page change */
 
 function nextPage(num){
 
 document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"))
 
 document.getElementById("page"+num).classList.add("active")
-
-}
-
-/* cake */
-
-function cutCake(){
-
-alert("Wish Made 🎉")
-
-nextPage(3)
 
 }
 
@@ -328,24 +278,6 @@ setTimeout(()=>heart.remove(),6000)
 }
 
 setInterval(createHeart,800)
-
-/* slideshow */
-
-let slide=0
-
-setInterval(()=>{
-
-let imgs=document.querySelectorAll(".gallery img")
-
-imgs.forEach(i=>i.classList.remove("active"))
-
-slide++
-
-if(slide>=imgs.length)slide=0
-
-imgs[slide].classList.add("active")
-
-},3000)
 
 </script>
 
