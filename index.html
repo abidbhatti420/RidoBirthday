@@ -1,6 +1,7 @@
 ```html
 <!DOCTYPE html>
 <html>
+
 <head>
 
 <meta charset="UTF-8">
@@ -19,8 +20,6 @@ text-align:center;
 overflow-x:hidden;
 }
 
-/* pages */
-
 .page{
 display:none;
 padding:30px 20px;
@@ -31,21 +30,17 @@ min-height:100vh;
 display:block;
 }
 
-/* text */
-
 h1{
-margin-top:20px;
 font-size:32px;
+margin-top:20px;
 }
 
 p{
-max-width:700px;
-margin:auto;
+max-width:800px;
+margin:15px auto;
 line-height:1.7;
 font-size:18px;
 }
-
-/* button */
 
 .button{
 margin-top:30px;
@@ -57,8 +52,6 @@ background:white;
 color:#ff4f81;
 cursor:pointer;
 }
-
-/* profile photo */
 
 .photo{
 width:220px;
@@ -76,8 +69,6 @@ height:100%;
 object-fit:cover;
 }
 
-/* gallery */
-
 .gallery{
 display:flex;
 flex-wrap:wrap;
@@ -91,23 +82,17 @@ width:150px;
 border-radius:15px;
 }
 
-/* video */
-
 video{
 width:90%;
 max-width:350px;
-margin-top:20px;
 border-radius:15px;
+margin-top:20px;
 }
-
-/* cake */
 
 .cake{
 font-size:80px;
 margin-top:60px;
 }
-
-/* hearts */
 
 .heart{
 position:fixed;
@@ -185,48 +170,82 @@ animation:float 6s linear infinite;
 <h1>My Heart For You ❤️</h1>
 
 <p>
-
 Happy Birthday to the Queen of my heart ❤️  
-
 The Lady of my dreams  
 And The Love of my Life ❤️  
-
 I love you so much Janam 💋💋💋  
-
 You mean the world 🌍 to me Janam...  
-
 I can't imagine my life without you..  
-
 I feel I'm the luckiest Boy to have you in my life 😍  
-
 Thankyou for always being there..  
-
 This birthday I'm not wid you.. but  
 InshaAllah we will celebrate all of our coming birthdays together..  
-
 InshaAllah you will be my Wife soon ❤️  
-
-I love you meri Janam 😘  
-
+I love you meri Janam 😘
 </p>
 
 <p>
-
 Happy birthday to my favorite person 😍🎉🎈  
-
 You’re the most beautiful soul 🎂🌺  
-
 the strongest girl 💪👑 I’ve ever known  
-
 You have no idea how much I like you ❤️  
-
 Janam you’re my everything 💎💗  
-
 From the deepest part of my heart  
 I LOVE YOU ❤️  
+I hope we spend the rest of our lives together 👫
+</p>
 
-I hope we spend the rest of our lives together 👫  
+<p>
+Ridooooo, tum meri mohabbat ho, meri aadat ho, meri sukoon ki wajah ho.<br>
+Main na kabhi tumhein dhoka de sakta hoon.<br>
+Main sirf aur sirf tumhara hoon.
+</p>
 
+<p>
+Tum ne meri jaan le li hai.<br>
+Main tum par qurban hoon.
+</p>
+
+<p>
+Har roz tum se milne ka sochta hoon.<br>
+Us din se tum mere andar bas gayi ho.
+</p>
+
+<p>
+Agar kabhi main sakht ho gaya to mujhe maaf kar dena.<br>
+Main tum se rooh se mohabbat karta hoon.
+</p>
+
+<p>
+Main tumhein kabhi chhor nahi sakta.<br>
+Har lamha mere saath rehta hai mithooo.
+</p>
+
+<p>
+Meri sab se badi dua yeh hai ke ek din tum meri biwi bano.<br>
+Main roz Allah se dua karta hoon ke woh meri is dua ko qabool kare.<br>
+Ameen.
+</p>
+
+<p>
+Main tumhein aaj bhi apni biwi maanta hoon.<br>
+Baaki sab Allah ke haath mein hai.
+</p>
+
+<p>
+Tumhara gift tayyar hai.<br>
+Main khud apne haathon se doon ga.<br>
+Yeh wada raha.
+</p>
+
+<p><strong>
+I love you more than my ego, more than my fears, more than my limits.
+</strong></p>
+
+<p>
+Hamesha khush raho.<br>
+Salamat raho.<br>
+Aur meri jeene ki wajah bani raho.
 </p>
 
 <button class="button" onclick="nextPage(5)">Final Surprise 🎥</button>
@@ -258,8 +277,6 @@ document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"))
 document.getElementById("page"+num).classList.add("active")
 
 }
-
-/* hearts */
 
 function createHeart(){
 
