@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -11,7 +12,7 @@
 
 body{
 margin:0;
-font-family:Arial, sans-serif;
+font-family:Arial;
 background:linear-gradient(135deg,#ff6a88,#ff99ac);
 color:white;
 text-align:center;
@@ -26,35 +27,17 @@ min-height:100vh;
 
 .active{
 display:block;
-animation:fade 1s;
-}
-
-@keyframes fade{
-from{opacity:0}
-to{opacity:1}
-}
-
-h1{
-font-size:40px;
-margin-bottom:20px;
-}
-
-p{
-font-size:20px;
-max-width:700px;
-margin:auto;
-line-height:1.6;
 }
 
 img{
-width:260px;
+width:280px;
 border-radius:20px;
-margin:20px;
-box-shadow:0 8px 20px rgba(0,0,0,0.3);
+margin-top:20px;
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
 }
 
 button{
-padding:15px 30px;
+padding:14px 30px;
 font-size:18px;
 border:none;
 border-radius:30px;
@@ -62,17 +45,16 @@ background:white;
 color:#ff3d6b;
 cursor:pointer;
 margin-top:30px;
-font-weight:bold;
 }
 
-button:hover{
-transform:scale(1.05);
+video{
+margin-top:20px;
+border-radius:20px;
 }
 
 .heart{
 position:fixed;
 top:-10px;
-color:red;
 font-size:20px;
 animation:fall linear infinite;
 }
@@ -95,16 +77,13 @@ transform:translateY(100vh);
 
 <h1>Happy Birthday Rida Noor ❤️</h1>
 
-<p>
-Aaj ka din duniya ka sab se beautiful din hai  
-because today the most beautiful girl was born 🎂✨  
-</p>
+<p>You are the most beautiful part of my life 💕</p>
 
-<img src="rida.jpg">
+<img src="rida.jpeg">
 
 <br>
 
-<button onclick="nextPage()">Start the Surprise 🎁</button>
+<button onclick="nextPage()">Start Surprise 🎁</button>
 
 </div>
 
@@ -115,12 +94,9 @@ because today the most beautiful girl was born 🎂✨
 
 <h1>My Lifeline ❤️</h1>
 
-<p>
-Rida Noor tum meri life ki sab se beautiful blessing ho  
-aur meri har smile ki wajah bhi tum ho 💕  
-</p>
+<p>You make my world brighter every day ✨</p>
 
-<img src="lifeline1.jpg">
+<img src="lifeline1.jpeg">
 
 <br>
 
@@ -135,12 +111,9 @@ aur meri har smile ki wajah bhi tum ho 💕
 
 <h1>My Happiness 🌸</h1>
 
-<p>
-Tumhari smile meri weakness hai  
-aur tumhari khushi meri responsibility 💗  
-</p>
+<p>Your smile is my favorite thing in the world 😊</p>
 
-<img src="lifeline2.jpg">
+<img src="lifeline2.jpeg">
 
 <br>
 
@@ -155,16 +128,13 @@ aur tumhari khushi meri responsibility 💗
 
 <h1>Forever Together 💍</h1>
 
-<p>
-Main dua karta hoon ke Allah tumhe hamesha khush rakhe  
-aur InshaAllah hum bohat saare birthdays saath celebrate karein 🎂  
-</p>
+<p>InshaAllah we will celebrate many birthdays together 🎂</p>
 
-<img src="lifeline3.jpg">
+<img src="lifeline3.jpeg">
 
 <br>
 
-<button onclick="nextPage()">Final Message ❤️</button>
+<button onclick="nextPage()">Final Surprise ❤️</button>
 
 </div>
 
@@ -173,14 +143,15 @@ aur InshaAllah hum bohat saare birthdays saath celebrate karein 🎂
 
 <div class="page">
 
-<h1>I Love You Janam ❤️</h1>
+<h1>A Special Video For You 🎥</h1>
 
-<p>
-Rida Noor  
-You are my peace, my happiness and my everything 💕  
+<video width="320" controls>
 
-Happy Birthday Janam 🎂  
-</p>
+<source src="video.mp4" type="video/mp4">
+
+</video>
+
+<p>I Love You Janam ❤️</p>
 
 </div>
 
@@ -188,16 +159,19 @@ Happy Birthday Janam 🎂
 <script>
 
 let page=0
+
 let pages=document.querySelectorAll(".page")
 
 function nextPage(){
 
-pages[page].classList.remove("active")
+pages[page].style.display="none"
 
 page++
 
 if(page<pages.length){
-pages[page].classList.add("active")
+
+pages[page].style.display="block"
+
 }
 
 }
@@ -205,16 +179,21 @@ pages[page].classList.add("active")
 function createHeart(){
 
 let heart=document.createElement("div")
+
 heart.classList.add("heart")
+
 heart.innerHTML="❤️"
 
 heart.style.left=Math.random()*100+"vw"
+
 heart.style.animationDuration=(Math.random()*3+2)+"s"
 
 document.body.appendChild(heart)
 
 setTimeout(()=>{
+
 heart.remove()
+
 },5000)
 
 }
@@ -224,4 +203,5 @@ setInterval(createHeart,300)
 </script>
 
 </body>
+
 </html>
